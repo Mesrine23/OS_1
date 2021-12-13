@@ -59,7 +59,7 @@ int main(int argc, char* argv[])
             exit(EXIT_FAILURE);
         }
 
-        printf("Client: %d\n",id);      
+        printf("Client: %d with id -> %d\n",id,getpid());      
 
         int x = rand() % atoi(argv[1]);
         x += 1;
@@ -90,7 +90,7 @@ int main(int argc, char* argv[])
     //printf("Timer ends \n");
     t = clock() - t;
     double time_taken = ((double)t)/CLOCKS_PER_SEC; // calculate the elapsed time
-    printf("The client-process took %f seconds to execute\n\n", time_taken);
+    printf("The client-process with id->%d took %f seconds to execute\n\n", getpid(), time_taken);
 
     return 0;
 }
