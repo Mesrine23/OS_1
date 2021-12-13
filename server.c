@@ -138,7 +138,6 @@ int main(int argc, char *argv[])
             exit(EXIT_FAILURE);
         }
         sem_post(sem_reader);
-        //sem_unlink(SEM_READ_FNAME);
         sem_wait(sem_server);
     }
 
