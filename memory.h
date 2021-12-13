@@ -13,5 +13,6 @@ bool destroy_memory_block(char* filename);
 
 #define SEM_SERVER_FNAME "/myserver"
 #define SEM_CLIENT_FNAME "/myclient"
+#define SEM_READ_FNAME "/myreader"
 
 #endif
